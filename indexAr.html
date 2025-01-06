@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
     <meta charset="UTF-8">
@@ -9,10 +9,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
-    <title>Chemora-Home</title>
+    <title>كيمورا من بَيوطِبّ</title>
 </head>
 
 
@@ -33,7 +30,7 @@
 
 
 
-        <nav>
+        <nav dir="ltr">
             <div class="nav-center">
                 <div class="nav-header">
                     <a href="#"><img class="logo" src="Chemora-img.png"
@@ -44,21 +41,24 @@
 
                 <!--links-->
                 <ul class="links">
+                    
                     <li>
-                        <a href="index.html">home</a>
+                        <a href="index.html">English</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">تواصل معنا</a>
                     </li>
                     <li>
-                        <a href="about.html">about</a>
+                        <a href="about.html">التجارب</a>
                     </li>
                     <li>
-                        <a href="projects.html">projects</a>
+                        <a href="index.html">الرئيسية</a>
                     </li>
-                    <li>
-                        <a href="contact.html">contact</a>
-                    </li>
-                    <li>
-                        <a style="letter-spacing: 0px; font-family: sans-serif;" href="indexAr.html">العربية</a>
-                    </li>
+
+
+
+
                 </ul>
 
 
@@ -73,9 +73,9 @@
                 <img class="main-img" src="Screenshot_2024-09-06_230534-removebg-preview.png" alt="">
             </div> -->
 
-            <h1 class="start-h1">Chemora</h1>
-            <h2 class="start-h2">Your Gate to explore The Fabulous World of chemical experiments</h2>
-            <button class="start-btn">Let's Go!</button>
+            <h1 class="start-h1" >كيمورا</h1>
+            <h2 class="start-h2">بوابتك لدخول عالم التجارب الكيميائية</h2>
+            <button class="start-btn">اضغط للبدأ</button>
         </section>
 
 
@@ -91,30 +91,24 @@
 
 
     <section class="counters-section ChHidden">
-        <h2 class="counters-title">Chemora in Numbers</h2>
+        <h2 class="counters-title">إحصائياتُنا</h2>
         <div class="counters">
             <div class="counter-item">
 
                 <p class="counter" data-target="150">0</p>
-                <h3>Users</h3>
+                <h3>مستخدم</h3>
             </div>
             <div class="counter-item">
 
                 <p class="counter" data-target="20">0</p>
-                <h3>Lessons & Experiments</h3>
+                <h3>دروس و تجارب</h3>
             </div>
             <div class="counter-item">
 
                 <p class="counter" data-target="10">0</p>
-                <h3>Quizes</h3>
+                <h3>اختبارات قصيرة</h3>
             </div>
         </div>
-    </section>
-
-
-
-    <section class="bioteb">
-
     </section>
 
 
@@ -122,7 +116,7 @@
 
     <section class="SocialMedia ChHidden">
         <div class="social-space">
-            <h1 class="h1-media">Follow Us On social media!</h1>
+            <h1 class="h1-media" style="direction: rtl;">تابعونا على مواقع التواصل!</h1>
             <div class="social-icons-start">
                 <a class="social-icon" href="#">
                     <i class="fa-brands fa-youtube"></i>
@@ -140,7 +134,7 @@
 
 
     <section class="buzz-section">
-        <h2>Opinions About us</h2>
+        <h2 style="letter-spacing: 0px; font-family: 'rakkas', serif; font-size: 3.5rem">الآراء حولنا</h2>
         <div class="buzz-container">
           <div class="buzz-card">
             <p>This site turned my chemistry nightmares into dreams!</p>
@@ -170,10 +164,10 @@
 
     <footer>
         <ul class="ft-nav">
-            <a href="#"><li class="ft-li">Home</li></a>
-            <a href="#"><li class="ft-li">Experiments</li></a>
-            <a href="#"><li class="ft-li">Lessons</li></a>
-            <a href="#"><li class="ft-li">Contact</li></a>
+            <a href="#"><li class="ft-li">الرئيسية</li></a>
+            <a href="#"><li class="ft-li">التجارب</li></a>
+            <a href="#"><li class="ft-li">الدروس</li></a>
+            <a href="#"><li class="ft-li">تواصل</li></a>
         </ul>
 
         <div class="ft-social">
@@ -186,6 +180,12 @@
     </footer>
 
 
+
+
+
+    <!--Footer Section-->
+
+
     
 
 
@@ -196,6 +196,7 @@
 
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
     * {
         margin: 0;
         padding: 0;
@@ -223,19 +224,242 @@
     }
 
 
-    :root {
-  --primary-color: #3498db;
-  --accent-color: #e74c3c;
-  --bg-color: #f4f4f4;
-  --card-bg: #fff;
-  --text-color: #333;
-  --font-family: 'Poppins', sans-serif;
-}
+
+
+
+    /*middle*/
+
+    .cover {
+        /* background-image: url(Screenshot\ 2024-09-06\ 224926\ \(1\).png); */
+        /*in svg imgs you can add background color*/
+        /* background-color: rgb(47 54 90); */
+        height: 100vh;
+        /*You should always add height if you have background-image*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .middle {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .bg-video {
+        filter: brightness(40%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Ensures the video covers the entire background */
+        z-index: -1;
+        /* Puts the video behind the content */
+    }
+
+    .main-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 18vw;
+        position: relative;
+        top: 180px;
+    }
+
+    .middle-h1 {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 500px;
+    }
+
+
+    .first {
+        direction: rtl;
+        position: absolute;
+        right: 10vw;
+        top: 48%;
+        color: #fff;
+    }
+
+
+    .start-h1 {
+        font-weight: bolder;
+        font-size: 9vw;
+        font-family: 'Rakkas', serif;
+    }
+
+    .start-btn {
+        margin-top: 30px;
+        background: transparent;
+        border-radius: 100px;
+        padding: 20px;
+        font-size: 23px;
+        color: #fff;
+        border: 1px solid;
+        border-color: #fff;
+        cursor: pointer;
+        transition: 0.8s all;
+    }
+
+    .start-btn:hover {
+        color: #cae3ec;
+        box-shadow: 5px 5px 90px gray;
+    }
+
+    .start-h2 {
+        color: #1AC2EA;
+        font-size: 1.4vw;
+    }
 
 
 
 
-/*Buzz*/
+
+
+    @media(max-width:800px) {
+
+        .nav-header {
+            display: flex;
+            padding: 30px;
+            /* background-color: #fff; */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 190px;
+        }
+
+        .nav-toggle {
+            display: block;
+            padding-left: 2px;
+        }
+
+        .social-icons {
+            display: none;
+        }
+
+        .main-img {
+            width: 200px;
+        }
+
+
+        .nav-toggle {
+            border: none;
+            background: transparent;
+            font-size: 35px;
+            cursor: pointer;
+            color: rgb(127, 166, 201);
+            transition: 0.4s all;
+        }
+
+        .nav-toggle:hover {
+            transform: rotate(90deg);
+            color: black;
+        }
+
+        .links {
+            background-color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            letter-spacing: 3px;
+            text-transform: capitalize;
+            padding-top: 2px;
+            display: block;
+            padding: 13px 18px;
+            font-size: 1.3em;
+            transition: 0.5s all;
+        }
+
+        .links a {
+            padding-left: 43px;
+        }
+    }
+
+    @media(min-width:800px) {
+
+        .logo {
+            width: 230px;
+            padding-top: 15px;
+        }
+
+        .nav-center {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 15px 50px;
+            /* background-color: #fff; */
+        }
+
+        .links {
+            height: auto;
+            display: flex;
+            font-size: 10px;
+            padding-top: 16px;
+        }
+
+        .links a {
+            font-size: 20px;
+            color: #fff;
+            text-transform: capitalize;
+            /* opacity: 0.5; */
+            transition: 0.3s all;
+        }
+
+        .links a:hover {
+            opacity: 1;
+            font-size: 25px;
+        }
+
+        .social-icons {
+            display: flex;
+        }
+
+        .nav-toggle {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .social-icons a {
+            color: rgb(59, 142, 214);
+            font-size: 20px;
+            padding-left: 10px;
+            transition: 0.3s all;
+        }
+
+        .social-icons a:hover {
+            color: rgb(7, 93, 169);
+        }
+
+
+
+    }
+
+
+
+
+
+  /*Buzz*/
 
 :root {
   --primary-color: #3498db;
@@ -610,12 +834,11 @@ body {
 
     /* Title */
     .counters-title {
-        font-size: 3em;
+        font-size: 4.5em;
         margin-bottom: 50px;
         color: #333;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Rakkas', serif;
         font-weight: 600;
-        letter-spacing: 2px;
         animation: slideDown 1s ease-in-out;
     }
 
@@ -1107,11 +1330,14 @@ body {
 
 
 
+
+
 </style>
 
 
 <script>
-// Burger menu toggle
+
+    // Burger menu toggle
 const burger = document.querySelector(".nav-toggle");
     const links = document.querySelector(".links");
 

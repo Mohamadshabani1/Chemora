@@ -1,34 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Chemora-Home</title>
 </head>
+
 <body>
-    <details class="details-faq">
-        <summary class="faq-Q">Epcot Center</summary>
-        <p class="faq-ans">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-      </details>
+    <div class="cover">
+        <video autoplay muted loop class="bg-video">
+            <source src="ChemoraIntroHome.mp4" type="video/mp4">
+        </video>
 
+        <nav>
+            <div class="nav-center">
+                <div class="nav-header">
+                    <a href="#"><img class="logo" src="Chemora-img.png" alt="logo"></a>
+                    <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
+                </div>
+                <!--links-->
+                <ul class="links">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
+        <section class="first">
+            <h1 class="start-h1">Chemora</h1>
+            <h2 class="start-h2">Discover The Fabulous World of Chemistry</h2>
+            <button class="start-btn">Let's Go!</button>
+        </section>
+    </div>
 
+    <section class="counters-section ChHidden">
+        <h2 class="counters-title">Chemora in Numbers</h2>
+        <div class="counters">
+            <div class="counter-item">
+                <p class="counter" data-target="100">0</p>
+                <h3>Clients</h3>
+            </div>
+            <div class="counter-item">
+                <p class="counter" data-target="120">0</p>
+                <h3>Products</h3>
+            </div>
+            <div class="counter-item">
+                <p class="counter" data-target="300">0</p>
+                <h3>Projects</h3>
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-
-
-
-      <style>
-        .faq-Q{
-            display: flex;
-            justify-content: space-between;
-        }
-      </style>
+    <section class="SocialMedia ChHidden">
+        <div class="social-space">
+            <h1 class="h1-media">Follow Us On Social Media!</h1>
+            <div class="social-icons-start">
+                <a class="social-icon" href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a class="social-icon" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a class="social-icon" href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
 </body>
 
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
 
+    body {
+        background-color: #f8f9ff;
+        overflow-x: hidden;
+    }
+
+    .cover {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        filter: brightness(40%);
+    }
+
+    .first {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        color: #fff;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+
+    .start-h1 {
+        font-weight: bolder;
+        font-size: 8vw;
+    }
+
+    .start-btn {
+        margin-top: 30px;
+        background: transparent;
+        border-radius: 100px;
+        padding: 1.5rem 3rem;
+        font-size: 1.5rem;
+        color: #fff;
+        border: 1px solid;
+        border-color: #fff;
+        cursor: pointer;
+        transition: 0.8s all;
+    }
+
+    .start-btn:hover {
+        color: #cae3ec;
+        box-shadow: 5px 5px 90px gray;
+    }
+
+    .start-h2 {
+        color: #1AC2EA;
+        font-size: 2vw;
+    }
+
+    /* Navigation */
+    .nav-header {
+        display: flex;
+        padding: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 15vw;
+        max-width: 200px;
+    }
+
+    .nav-toggle {
+        display: block;
+        padding-left: 2px;
+        border: none;
+        background: transparent;
+        font-size: 2rem;
+        cursor: pointer;
+        color: rgb(127, 166, 201);
+        transition: 0.4s all;
+    }
+
+    .nav-toggle:hover {
+        transform: rotate(90deg);
+        color: black;
+    }
+
+    .links {
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s all;
+        background-color: #fff;
+    }
+
+    .show-links {
+        height: auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        letter-spacing: 3px;
+        text-transform: capitalize;
+        display: block;
+        padding: 13px 18px;
+        font-size: 1.3em;
+        transition: 0.5s all;
+    }
+
+    /* Counters Section */
+    .counters-section {
+        padding: 5rem 0;
+        text-align: center;
+    }
+
+    .counters-title {
+        font-size: 3rem;
+        margin-bottom: 50px;
+        color: #333;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    .counters {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .counter-item {
+        padding: 30px;
+        width: 20%;
+        min-width: 200px;
+        margin: 20px;
+    }
+
+    .counter-item h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #555;
+    }
+
+    .counter {
+        font-size: 7rem;
+        color: #117f99;
+        font-weight: bold;
+    }
+
+    /* Social Media */
+    .SocialMedia {
+        background-color: #dee3fc;
+        padding: 3rem 0;
+        text-align: center;
+    }
+
+    .h1-media {
+        font-size: 3rem;
+        color: #1c1e22;
+    }
+
+    .social-icons-start {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .social-icon {
+        background: #fff;
+        border-radius: 50%;
+        padding: 15px;
+        transition: 0.5s all;
+    }
+
+    .social-icon:hover {
+        box-shadow: 5px 5px 20px rgb(115, 116, 163);
+    }
+
+    .fa-brands {
+        color: rgb(78, 96, 121);
+        font-size: 2rem;
+        transition: 1s all;
+    }
+
+    .fa-brands:hover {
+        color: rgb(37, 52, 74);
+    }
+
+    /* Responsive Styles */
+    @media (min-width: 1600px) {
+        .start-h1 {
+            font-size: 7vw;
+        }
+
+        .start-btn {
+            font-size: 2rem;
+            padding: 1.7rem 3.5rem;
+        }
+
+        .counters-title {
+            font-size: 3.5rem;
+        }
+    }
+
+    @media only screen and (max-width: 1400px) {
+        .start-h1 {
+            font-size: 8vw;
+        }
+
+        .start-btn {
+            font-size: 1.4rem;
+            padding: 1.2rem 2.5rem;
+        }
+
+        .counters-title {
+            font-size: 3rem;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .start-h1 {
+            font-size: 10vw;
+        }
+
+        .start-btn {
+            font-size: 1.3rem;
+            padding: 1rem 2rem;
+        }
+
+        .counters-title {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .start-h1 {
+            font-size: 12vw;
+        }
+
+        .start-btn {
+            font-size: 1.2rem;
+            padding: 1rem 2rem;
+        }
+
+        .counters-title {
+            font-size: 2rem;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .start-h1 {
+            font-size: 15vw;
+        }
+
+        .start-h2 {
+            font-size: 5vw;
+        }
+
+        .start-btn {
+            font-size: 1rem;
+            padding: 8px 15px;
+        }
+
+        .counters-title {
+            font-size: 1.8rem;
+        }
+    }
+</style>
+
+<script>
+    // JavaScript to handle nav toggle
+    const navToggle = document.querySelector(".nav-toggle");
+    const links = document.querySelector(".links");
+
+    navToggle.addEventListener("click", () => {
+        links.classList.toggle("show-links");
+    });
+
+    // Counters animation script
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+        counter.innerText = '0';
+        const updateCounter = () => {
+            const target = +counter.getAttribute('data-target');
+            const c = +counter.innerText;
+            const increment = target / 200;
+            if (c < target) {
+                counter.innerText = `${Math.ceil(c + increment)}`;
+                setTimeout(updateCounter, 30);
+            } else {
+                counter.innerText = target;
+            }
+        };
+        updateCounter();
+    });
+</script>
 
 </html>
